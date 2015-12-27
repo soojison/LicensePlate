@@ -24,7 +24,7 @@ public class carDB {
 	}
 	
 	public static void main(String[] args) {
-		String newCar = generatePlate(carType.MPV, false, false);
+		String newCar = generatePlate(carType.PASSENGER, false, false);
 		System.out.println(newCar);
 	}
 }

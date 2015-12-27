@@ -94,6 +94,10 @@ public class Car {
 	 * returns the string-ified form of the license plate
 	 */
 	public String toString() {
-		return useNum + useStr + " " + idNum;
+		if(useNum < 10) {
+			return "0" + useNum + useStr + " " + idNum;
+		} else {
+			return useNum + useStr + " " + idNum;
+		}
 	}
 }
